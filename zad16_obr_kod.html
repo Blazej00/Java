@@ -1,0 +1,47 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_obrycki() {
+            window.close()
+        }
+        24
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Obrycki" cols="120" rows="30" readonly>
+<!DOCTYPE html>
+ <head>
+ <title> </title>
+ <meta charset="utf-8">
+ </head>
+<body>
+<div style="color:navy;font-size:100px;">
+ <script language="JavaScript">
+let A=prompt("A=","");
+let A_obr=parseFloat(A);
+let B=prompt("B=","");
+let B_obr=parseFloat(B);
+
+let C_obr=A_obr*A_obr*A_obr;
+let D_obr=3*A_obr*A_obr*B_obr;
+let E_obr=3*A_obr*B_obr*B_obr;
+let F_obr=B_obr*B_obr*B_obr;
+let O_obr=C_obr+D_obr+E_obr+F_obr;
+
+document.write("A="+A_obr+" "+"B="+B_obr+"<br>");
+document.write("("+A_obr+"+");
+document.write(B_obr+")^3=");
+document.write(A_obr+"^3 + 3*(("+A_obr+")^"+B_obr+")*("+B_obr+") + 3*("+A_obr+")*(("+B_obr+")^"+B_obr+")");
+document.write(B_obr+"^3 = "+C_obr+"+"+D_obr+"+"+E_obr+"+"+F_obr+"="+O_obr+"<br>");
+ </script>
+</div>
+</body>
+</html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_obrycki()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
