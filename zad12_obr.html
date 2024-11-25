@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Zadanie 12</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <div id="strona" style="color:red;font-size:50px;">
+        <script language="JavaScript">
+            let D1_obr = prompt("Pierwsza data (D1_obr):", "");
+            let G1_obr = prompt("Pierwsza godzina (G1_obr):", "");
+            let D2_obr = prompt("Druga data (D2_obr):", "");
+            let G2_obr = prompt("Druga godzina (G2_obr):", "");
+
+            let D1 = parseInt(D1_obr);
+            let G1 = parseInt(G1_obr);
+            let D2 = parseInt(D2_obr);
+            let G2 = parseInt(G2_obr);
+
+            let iloscSekund = ((D1 - D2) * 24 * 60 * 60) + ((G1 - G2) * 60 * 60);
+            document.getElementById("strona").innerHTML = "Ilość sekund: " + iloscSekund + " sekund";
+        </script>
+    </div>
+</body>
+
+</html>
