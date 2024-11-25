@@ -1,0 +1,43 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close()
+        }
+        29
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Obrycki" cols="120" rows="30" readonly>
+<!DOCTYPE html> 
+ <head> 
+ <title> Ile sekund</title> 
+ <meta charset="utf-8"> 
+ </head> 
+<body>
+<div style="color:red;font-size:50px;">
+ <script language="JavaScript">
+let D1_obr=prompt("D1_obr=","");
+let D2_obr=prompt("D2_obr=","");
+let ile_sekund_obr;
+ let a=parseFloat(D1_obr);
+ let b=parseFloat(D2_obr);
+ile_sekund_obr=(D1_obr-D2_obr)*24*3600;
+
+ document.write("dzień1="+D1_obr+"<br>");
+ document.write("dzień2="+D2_obr+"<br>");
+ document.write("sekund="+ile_sekund_obr+"sek"+"<br>");
+
+
+ </script>
+</div>
+ </body> 
+</html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
