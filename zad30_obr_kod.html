@@ -1,0 +1,44 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_obrycki() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Obrycki" cols="120" rows="30" readonly>
+<html>
+ <head>
+ <script type="text/javascript">
+ var Komputer = {
+marka: 'ASUS',
+kolor: 'Czarny',
+chłodzenie: 'Wodne',
+Komputer_wyswietl_Obrycki: function ()
+{
+ document.write(this.marka + ' ' + this.kolor + ' ' + this.chłodzenie)
+ }
+}
+Owoc.Komputer_wyswietl_Obrycki();
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to Komputer<br>
+ Pola:<br>
+ marka<br>
+ kolor<br>
+ chłodzenie<br>
+ metoda: Komputer_wyswietl_Obrycki<br>
+</body>
+</html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_obrycki()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
