@@ -1,0 +1,32 @@
+<html>
+ <head>
+ <script type="text/javascript">
+ var Komputer = {
+marka: 'ASUS',
+kolor: 'Czarny',
+chłodzenie: 'Wodne',
+Komputer_wyswietl_Obrycki: function ()
+{
+ document.write(this.marka + ' ' + this.kolor + ' ' + this.chłodzenie)
+ }
+}
+Komputer.Komputer_wyswietl_Obrycki();
+Komputer.cena= 4400;
+Komputer.Komputer_pokaz_Obrycki=function() {alert('Cena: ' + this.cena + ' ')}
+Komputer.Komputer_pokaz_Obrycki();
+ </script>
+ </head>
+<body>
+<br>
+ Programowanie obiektowe. <br>
+ Obiekt to Komputer<br>
+ Pola:<br>
+ marka<br>
+ kolor<br>
+ chłodzenie<br>
+ metoda: <br>
+ Komputer_wyswietl_Obrycki<br>
+ nowe pole to cena <br>
+ nowa metoda to Komputer_pokaz_Obrycki();<br>
+</body>
+</html>
