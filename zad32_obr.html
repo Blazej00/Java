@@ -13,13 +13,13 @@ this.cena=cena_bla;
  {
  alert(this.komputer + ' ' + this.kolor+ ' ' + this.chlodzenie+ ' ' + this.cena);
  };
-var HP = new komputerobrycki("HP", "czarny", "chlodzenie: powetrzne", "5000"); 
-var Dell = new komputerobrycki("Dell", "bialy", "chlodzenie: wodne", "3000");
-var Apple = new komputerobrycki("Apple","szary","chlodzenie: powietrzne", "10000");
+var hp = new Komputerobrycki("hp", "czarny", "powetrzne", "5000"); 
+var dell = new Komputerobrycki("dell", "bialy", "wodne", "3000");
+var apple = new Komputerobrycki("apple","szary","powietrzne", "10000");
   
-HP.pokaz_obrycki(); 
-Dell.pokaz_obrycki(); 
-Apple.pokaz_obrycki(); 
+hp.pokaz_obrycki(); 
+dell.pokaz_obrycki(); 
+apple.pokaz_obrycki(); 
   
  document.write("dostęp do właściwości"+"<br>");
   
