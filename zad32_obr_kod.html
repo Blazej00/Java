@@ -1,0 +1,54 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_obrycki() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Obrycki" cols="120" rows="30" readonly>
+<html>
+ <head>
+ <script type="text/javascript">
+ function Komputerobrycki(komputer_bla,kolor_bla,chlodzenie_bla,cena_bla)
+{
+this.komputer=komputer_bla;
+this.kolor=kolor_bla;
+this.chlodzenie=chlodzenie_bla;
+this.cena=cena_bla;
+}
+ komputerobrycki.prototype.pokaz_obrycki = function () 
+ {
+ alert(this.komputer + ' ' + this.kolor+ ' ' + this.chlodzenie+ ' ' + this.cena);
+ };
+var HP = new komputerobrycki("HP", "czarny", "chlodzenie: powetrzne", "5000"); 
+var Dell = new komputerobrycki("Dell", "bialy", "chlodzenie: wodne", "3000");
+var Apple = new komputerobrycki("Apple","szary","chlodzenie: powietrzne", "10000");
+  
+HP.pokaz_obrycki(); 
+Dell.pokaz_obrycki(); 
+Apple.pokaz_obrycki(); 
+  
+ document.write("dostęp do właściwości"+"<br>");
+  
+ document.write("Komputer 1: "+" "+HP.komputer+" "+HP.kolor+" "+HP.chlodzenie+" "+HP.cena+"<br>");
+ document.write("Komputer 2: "+" "+Dell.komputer+" "+Dell.kolor+" "+Dell.chlodzenie+" "+Dell.cena+"<br>");
+document.write("Komputer 3: "+" "+Apple.komputer+" "+Apple.kolor+" "+Apple.chlodzenie+" "+Apple.cena+"<br>");
+
+  
+ </script> 
+ </head>
+<body>
+<br>
+ programowanie obiektowe 
+</body>
+</html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_obrycki()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
