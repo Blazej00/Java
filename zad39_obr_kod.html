@@ -1,0 +1,41 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij_obrycki() {
+            window.close()
+        }
+    </script>
+</head>
+<body>
+<form>
+<textarea name="Obrycki" cols="120" rows="30" readonly>
+<html>
+ <head>
+ <script language="JavaScript">
+ function fun_obr() 
+ {
+ var x_obr = prompt("Podaj kolor", "");
+ if(x_obr == 1 || x_obr.toLowerCase() == "czerwony") {
+document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br>'); 
+} 
+ else if(x_obr == 2 || x_obr.toLowerCase() == "niebieski") {
+document.write('<h7 style="color:blue;">wczytałeś kolor niebieski</h7><br>');
+}
+}
+</script>
+<h1 style="color:green;">MENU</h1><br><br>
+
+<h2 style="color:red;">1-CZERWONY</h2>
+<h2 style="color:blue;">2-NIEBIESKI</h2>
+ 
+ <input type="button" name="Obrycki" value="Oblicz" onclick="fun_obr()" />
+
+</body>
+</html>
+</textarea>
+    </form>
+    <input type="button" value="zamknij okno" onclick="okno_zamknij_obrycki()" />
+    <script type="text/javascript">
+    </script>
+</body>
+</html>
